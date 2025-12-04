@@ -11,7 +11,7 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 # jar
-COPY --from=build /app/target/coralclub-bot-1.0.0-shaded.jar app.jar
+COPY --from=build /app/target/coralclub-bot-1.0.0.jar app.jar
 
 # Медиа: видео/фото/аудио
 COPY media ./media
