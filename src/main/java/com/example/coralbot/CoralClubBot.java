@@ -97,7 +97,7 @@ public class CoralClubBot extends TelegramLongPollingBot {
         Step startVideoStep = new Step(
                 StepType.VIDEO,
                 "start_video_1",   // ключ для кэша
-                "video/1.mp4",     // путь к файлу относительно MEDIA_BASE_PATH
+                "video/1.MP4",     // путь к файлу относительно MEDIA_BASE_PATH
                 null               // без подписи
         );
         // false = это не последнее сообщение сценария, не добавляем "Вернуться в меню"
