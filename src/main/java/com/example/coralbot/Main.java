@@ -15,7 +15,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        String token = getenvOrDefault("BOT_TOKEN", "8254293917:AAHARuZK11OaiVxrZWiz-bnnTGShXGKyZks");
+        String token = getenvOrDefault("BOT_TOKEN", "");
         String username = getenvOrDefault("BOT_USERNAME", "SocialMarketting_Bot");
         String dbPath = getenvOrDefault("DB_PATH", "bot.db");
         String mediaBasePath = getenvOrDefault("MEDIA_BASE_PATH", "media");

@@ -93,17 +93,17 @@ public class CoralClubBot extends TelegramLongPollingBot {
     }
 
     private void sendStartMenu(long chatId) throws TelegramApiException {
-        // 1) Стартовое видео с кэшированием через mediaKey
-        Step startVideoStep = new Step(
-                StepType.VIDEO,
-                "start_video_1",   // ключ для кэша
-                "video/1.MP4",     // путь к файлу относительно MEDIA_BASE_PATH
-                null               // без подписи
+        // 1) СТАРТОВОЕ ФОТО (50.jpg)
+        Step startPhotoStep = new Step(
+                StepType.PHOTO,
+                "start_photo_50",      // ключ для кэша (любое уникальное имя)
+                "photo/50.jpg",        // путь к файлу относительно MEDIA_BASE_PATH
+                null                   // без подписи (если нужна — можно вписать сюда текст)
         );
-        // false = это не последнее сообщение сценария, не добавляем "Вернуться в меню"
-        sendVideo(chatId, startVideoStep, false);
+        // false — это не последнее сообщение, не добавляем "Вернуться в меню"
+        sendPhoto(chatId, startPhotoStep, false);
 
-        // 2) Приветственный текст + ГЛАВНОЕ МЕНЮ (инлайн-кнопки)
+        // 2) ПРИВЕТСТВЕННЫЙ ТЕКСТ + ГЛАВНОЕ МЕНЮ (ИНЛАЙН-КНОПКИ)
         SendMessage intro = new SendMessage();
         intro.setChatId(Long.toString(chatId));
         intro.setText(Content.START_INTRO_TEXT);  // твой большой текст
