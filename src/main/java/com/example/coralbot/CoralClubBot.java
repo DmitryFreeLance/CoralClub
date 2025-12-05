@@ -25,7 +25,7 @@ public class CoralClubBot extends TelegramLongPollingBot {
     // Тексты кнопок (с эмодзи)
     private static final String BTN_SOCIAL_MARKETING = "📊 СОЦИАЛЬНЫЙ МАРКЕТИНГ";
     private static final String BTN_IDEAL_MODEL = "🏗 ИДЕАЛЬНАЯ МОДЕЛЬ БИЗНЕСА";
-    private static final String BTN_WHY_CORAL = "💎 Почему Coral Club";
+    private static final String BTN_WHY_CORAL = "💎 Почему CORAL CLUB";
     private static final String BTN_AFTER_4_12 = "⏳ ЧЕРЕЗ 4–12 месяцев";
     private static final String BTN_FIN_RESULTS = "💰 РЕЗУЛЬТАТЫ ПАРТНЁРОВ";
     private static final String BTN_FOR_NETWORKERS = "🚀 ДЛЯ СЕТЕВИКОВ";

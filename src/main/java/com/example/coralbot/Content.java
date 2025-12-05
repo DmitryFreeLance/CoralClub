@@ -724,7 +724,7 @@ public class Content {
 
         // 33.MP3 + текст
         steps.add(new Step(
-                StepType.AUDIO,
+                StepType.VIDEO,
                 "faq_video_33",
                 "video/33.MP4",
                 "Где брать людей, если я из маленького города?"
